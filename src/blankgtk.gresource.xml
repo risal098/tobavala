@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/example/App">
+    <file>window.ui</file>
+    <file>gtk/help-overlay.ui</file>
+    <!-- widget ui file-->
+      <!--screens-->
+      <file>ui/screens/login.ui</file>
+      <file>ui/screens/register.ui</file>
+      <!--end screens-->
+      
+      <!--widget-->
+      <file>ui/widget/submitLogin.ui</file>
+      <file>ui/widget/submitRegister.ui</file>
+      <file>ui/widget/labelLogin.ui</file>
+      <file>ui/widget/labelRegister.ui</file>
+      <!--end widget-->
+      
+    <!-- end widget ui file-->
+  </gresource>
+</gresources>
