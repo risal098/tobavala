@@ -17,7 +17,7 @@ namespace Screens{
             thisPages = thisPage;
             mainBox = thisPage.mainBox;
             secondary = thisPage.secondaryBox;
-            mainBox.set_size_request(900,800);
+            //  mainBox.set_size_request(900,800);
             var tempCard=new Widgets.SongCard("/org/example/App/assets/AThousand_Years.png", "A Thousand Years", "Christina Perri");
             secondary.append(tempCard.thisbox);
             for(int i = 0; i<20; i++){
