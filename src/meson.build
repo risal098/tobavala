@@ -7,12 +7,14 @@ blankgtk_sources = [
 
 screens=[
   './screens/login.vala',
- './screens/register.vala']
+ './screens/register.vala',
+ './screens/SongSection.vala']
 widget=[
   './widget/labelLogin.vala', 
   './widget/labelRegister.vala',
   './widget/submitLogin.vala',
-  './widget/submitRegister.vala']
+  './widget/submitRegister.vala',
+  './widget/songCard.vala']
 controllers=[
   './controllers/tes.vala', 
 ]
