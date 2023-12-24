@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+<template class="WidgetsEntryRegisterUi" parent="GtkBox">
+
+<child>
+  <object class="GtkBox" id="formregWrapper">
+    <property name="orientation">vertical</property>
+    <property name="spacing">15</property>
+    <style>
+      <class name="regWrapper"/>
+    </style>
+
+
+    <child>
+      <object class="GtkEntry" id="usernameRegister">
+      <property name="placeholder-text">Username</property>
+        <attributes>
+          <attribute name="weight" value="PANGO_WEIGHT_BOLD"/>
+          <!-- <attribute name="background" value="red" start="5" end="10"/> -->
+          <!-- <attribute name="alignment" value="2.5"/> -->
+        </attributes>
+      </object>
+    </child>
+
+    <child>
+      <object class="GtkEntry" id="emailRegister">
+        <property name="placeholder-text">Example@gmail.com</property>
+        <attributes>
+          <attribute name="weight" value="PANGO_WEIGHT_BOLD"/>
+          <!-- <attribute name="background" value="red" start="5" end="10"/> -->
+        </attributes>
+      </object>
+    </child>
+
+    <child>
+      <object class="GtkEntry" id="passwordRegister">
+        <property name="placeholder-text">Password</property>
+        <property name="visibility">FALSE</property>
+        <attributes>
+          <attribute name="weight" value="PANGO_WEIGHT_BOLD"/>
+          <!-- <attribute name="background" value="red" start="5" end="10"/> -->
+        </attributes>
+      </object>
+    </child>
+
+
+  </object>
+
+</child>
+
+
+</template>
+</interface>

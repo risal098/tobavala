@@ -12,7 +12,10 @@ widget=[
   './widget/labelLogin.vala', 
   './widget/labelRegister.vala',
   './widget/submitLogin.vala',
-  './widget/submitRegister.vala']
+  './widget/submitRegister.vala',
+  './widget/entryLogin.vala',
+  './widget/entryRegister.vala',
+  ]
 controllers=[
   './controllers/tes.vala', 
 ]

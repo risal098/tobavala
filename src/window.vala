@@ -30,12 +30,17 @@ namespace Blankgtk {
            print("2");
             Object (application: app);
             
-            
+            var css_provider = new Gtk.CssProvider ();
+            string resc = "/org/example/App/assets/login.css";
+            css_provider.load_from_resource (resc);
+            Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
+
+
         }
         construct{
            print("1");
-           var tempScreenMain=new Screens.RegisterPage();
-           wow=new Gtk.Box(Gtk.Orientation.HORIZONTAL,5);
+           var tempScreenMain=new Screens.LoginPage();
+           wow=new Gtk.Box(Gtk.Orientation.VERTICAL,5);
            this.set_child(wow);
            wow.append(tempScreenMain.thisPage);
            Navigator.myHome=wow;

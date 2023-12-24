@@ -1,0 +1,65 @@
+Build started at 2023-12-24T15:07:29.159391
+Main binary: /usr/bin/python3
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 0.61.2
+Source dir: /home/falah/Projects/tobavala
+Build dir: /home/falah/Projects/tobavala/builddir
+Build type: native build
+Project name: blankgtk
+Project version: 0.1.0
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/falah/Projects/tobavala/builddir/meson-private/sanitycheckc.exe
+C compiler for the host machine: cc (gcc 11.4.0 "cc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0")
+C linker for the host machine: cc ld.bfd 2.38
+Running compile:
+Working directory:  /tmp/tmpwydch40q
+Command line:  valac /tmp/tmpwydch40q/testfile.vala -C 
+
+Code:
+ class MesonSanityCheck : Object { }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Vala compiler for the host machine: valac (valac 0.56.0)
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/falah/Projects/tobavala/builddir/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (gcc 11.4.0 "cc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0")
+C linker for the build machine: cc ld.bfd 2.38
+Using cached compile:
+Cached command line:   
+
+Code:
+ class MesonSanityCheck : Object { }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Vala compiler for the build machine: valac (valac 0.56.0)
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+WARNING: Gettext not found, all translation targets will be ignored.
+
+data/meson.build:1:0: ERROR: Can not assign None to variable.

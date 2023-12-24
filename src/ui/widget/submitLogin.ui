@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
 <template class="WidgetsButtonLoginUi" parent="GtkBox">
+
 <child>
-	<object class="GtkButton" id="changeRegister">
-    <property name="label">go to register</property>
+  <object class="GtkBox" id="formWrapper">
+  <property name="orientation">vertical</property>
+  <property name="spacing">15</property>
+  <style>
+    <class name="myWrapper"/>
+  </style>
+
+  <child>
+	  <object class="GtkButton" id="changeRegister">
+      <property name="label">go to register</property>
     </object>
+  </child>
+
+  </object>
 </child>
 </template>
 </interface>

@@ -3,6 +3,7 @@ namespace Widgets{
       public Gtk.Button changeRegister; //the widget
       public Blankgtk.Window context;
       public Gtk.Box navPage;
+
       public ButtonLogin(){
          var tempBox=new ButtonLoginUi();
          changeRegister=tempBox.changeRegister;
@@ -25,6 +26,7 @@ namespace Widgets{
       [GtkChild]
       public unowned Gtk.Button changeRegister;
 
+
     }
  }
 
@@ -46,7 +48,7 @@ namespace Widgets{
 //     public Gtk.Button button1;
 //          public TesWidget1(Gtk.ApplicationWindow  windowe){
 
-                
+
 //            //      button1.clicked.connect(()=>print("halios"));
 //            var boxing=new Widget1();
 //             button1=boxing.button1;
@@ -56,7 +58,7 @@ namespace Widgets{
 //                button11=new Gtk.Button.with_label("mau");
 //                 button11.clicked.connect(()=>print("mawww  "));
 //          }
-       
+
 
 //      }
 
@@ -71,7 +73,7 @@ namespace Widgets{
 //             // maw.clicked.connect(()=>print("mawww  "));
 //          }
 //      }
-//  /* 
+//  /*
 //      [GtkTemplate (ui = "/org/example/App/ui/widget/button1.ui")]
 //      public class Widget1:Gtk.Box{
 //          Gtk.ApplicationWindow  window;
@@ -79,7 +81,7 @@ namespace Widgets{
 //          public string apa;
 //          [GtkChild]
 //          public Gtk.Button button1;
-        
+
 //          public Widget1(Gtk.ApplicationWindow  windowe){
 //              apa="tebak";
 //        //      this.window =windowe;
@@ -88,19 +90,19 @@ namespace Widgets{
 //              button1.clicked.connect(() =>{print("halios");});
 //              button11 = new Gtk.Button.with_label ("111");
 //              button11.clicked.connect(()=>{print("1111");});
-            
+
 //          }
 //          construct{
 //              print("2");
 //              button1.clicked.connect(() =>{print("halos");});
-            
-            
+
+
 //          }
 //          public void pr(){
 //              print("ava");
 //              button1.clicked.connect(() =>{print("halo");});
 //          }
-        
+
 //      }
 //  */
-   
+

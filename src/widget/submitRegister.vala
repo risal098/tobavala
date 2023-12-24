@@ -1,6 +1,5 @@
 
 
-
 namespace Widgets{
    public class ButtonRegister{
       public Gtk.Button changeLogin; //the widget
@@ -30,3 +29,5 @@ namespace Widgets{
 
     }
  }
+
+ 

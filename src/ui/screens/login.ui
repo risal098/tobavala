@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
 <template class="ScreensLoginPageUi" parent="GtkBox">
+
+
 <property name="orientation">vertical</property>
+<!-- <property name="spacing">10</property> -->
+<!-- <property name="baseline-position">bottom</property> -->
+
 </template>
 </interface>
+
