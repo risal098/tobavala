@@ -1,11 +1,11 @@
 namespace Screens{
-    public class SongSectionPage{
+    public class LeaderBoardPage{
         public Gtk.Box thisPages;
-        public SongSectionPageUi thisPage;
+        public LeaderBoardPageUi thisPage;
         public Gtk.ScrolledWindow mainBox;
         public Gtk.Box secondary;
         public Gtk.CssProvider css_style;
-        public SongSectionPage(){
+        public LeaderBoardPage(){
             css_style = new Gtk.CssProvider();
             css_style.load_from_resource("/org/example/App/assets/songcard.css");
             Gtk.StyleContext.add_provider_for_display(
@@ -13,7 +13,7 @@ namespace Screens{
                 css_style,
                 Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
             );
-            thisPage=new SongSectionPageUi();
+            thisPage=new LeaderBoardPageUi();
             thisPages = thisPage;
             mainBox = thisPage.mainBox;
             secondary = thisPage.secondaryBox;
@@ -21,15 +21,14 @@ namespace Screens{
             //  var tempCard=new Widgets.UserBox();
             //  secondary.append(tempCard.thisbox);
             for(int i = 0; i<20; i++){
-                string a = "A Thousand Years"+i.to_string();
-                secondary.append(new Widgets.SongCard("/org/example/App/assets/AThousand_Years.png", a, "Christina Perri").thisbox);
+                secondary.append(new Widgets.UserBox(i.to_string(), "Username", "1000 XP").thisbox);
             }
             
         }
 
     }
-    [GtkTemplate (ui = "/org/example/App/ui/screens/songsection.ui")]
-    public class SongSectionPageUi:Gtk.Box{
+    [GtkTemplate (ui = "/org/example/App/ui/screens/leaderBoard.ui")]
+    public class LeaderBoardPageUi:Gtk.Box{
        [GtkChild]
        public unowned Gtk.ScrolledWindow mainBox;
 

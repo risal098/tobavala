@@ -3,7 +3,7 @@
     margin-left: 10px;
     margin-right: 10px;
     /* background: rgb(255, 255, 255); */
-    background-image: linear-gradient(to right,rgb(172, 249, 255), rgb(203, 170, 255));
+    background-image: linear-gradient(to right,rgb(177, 252, 255), rgb(180, 210, 255));
     border-radius: 10px;
 }
 #box1:hover{
@@ -24,4 +24,14 @@
     font-size: 20px;
     font-weight: bold;
     margin-top: 30px;
+}
+
+#TitleLead{
+    padding-bottom: 30px;
+    font-size: 30px;
+    padding-top: 20px;
+    border-bottom: 1px solid black;
+    color: white;
+    background-image: linear-gradient(to right,rgb(0, 247, 255), rgb(50, 132, 255));
+
 }
