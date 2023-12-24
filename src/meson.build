@@ -21,6 +21,8 @@ functionality=[
 ]
 blankgtk_deps = [
   dependency('gtk4'),
+  dependency('libsoup-2.4'),
+  dependency('json-glib-1.0')
 ]
 
 gnome = import('gnome')

@@ -12,7 +12,7 @@
 	list.append (cookie);
 
 	// Send a request:
-	Soup.Message msg = new Soup.Message ("GET", "http://localhost:7100");
+	Soup.Message msg = new Soup.Message ("GET", "http://localhost:7100/getBasicSongList");
 	Soup.cookies_to_request (list, msg);
 	session.send_message (msg);
 
@@ -38,6 +38,8 @@
 	foreach (Soup.Cookie c in cookies) {
 		print ("  %s: %s\n", c.name, c.value);
 	}
-
+	print("\n\njson:\n\n");
+	
 	return 0;
 }
+//valac --pkg libsoup-2.4 your_program.vala

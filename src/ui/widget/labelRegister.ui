@@ -3,7 +3,6 @@
 <template class="WidgetsLabelRegisterUi" parent="GtkBox">
 <child>
 	<object class="GtkLabel" id="registerLabel">
-   
     </object>
 </child>
 </template>
