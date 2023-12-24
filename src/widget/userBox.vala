@@ -14,10 +14,16 @@ namespace Widgets{
              css_style,
              Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
          );
-        UserBoxUi tempBox=new UserBoxUi();
+        var tempBox=new UserBoxUi();
         thisbox = tempBox;
-        //  box1 = thisbox.box1;
-        //  rankLabel = thisbox.rankLabel;
+        box1 = tempBox.box1;
+        rankLabel = tempBox.rankLabel;
+        userLabel = tempBox.userLabel;
+        pointLabel = tempBox.pointLabel;
+
+        rankLabel.set_label(rank);
+        userLabel.set_label(uname);
+        pointLabel.set_label(points);
         thisbox.set_size_request(500,70);
      }
     }

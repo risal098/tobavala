@@ -20,8 +20,8 @@ namespace Screens{
             //  mainBox.set_size_request(900,800);
             //  var tempCard=new Widgets.UserBox();
             //  secondary.append(tempCard.thisbox);
-            for(int i = 0; i<20; i++){
-                secondary.append(new Widgets.UserBox(i.to_string(), "Username", "1000 XP").thisbox);
+            for(int i = 1; i<=20; i++){
+                secondary.append(new Widgets.UserBox(i.to_string(), "Username", "1000 XP"+"    ").thisbox);
             }
             
         }
