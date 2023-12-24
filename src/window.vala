@@ -34,7 +34,7 @@ namespace Blankgtk {
         }
         construct{
            print("1");
-           var tempScreenMain=new Screens.RegisterPage();
+           var tempScreenMain=new Screens.LoginPage();
            wow=new Gtk.Box(Gtk.Orientation.HORIZONTAL,5);
            this.set_child(wow);
            wow.append(tempScreenMain.thisPage);

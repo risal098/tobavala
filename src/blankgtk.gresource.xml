@@ -14,6 +14,8 @@
       <file>ui/widget/submitRegister.ui</file>
       <file>ui/widget/labelLogin.ui</file>
       <file>ui/widget/labelRegister.ui</file>
+      <file>ui/widget/entryLogin.ui</file>
+      <file>ui/widget/entryRegister.ui</file>
       <!--end widget-->
       
     <!-- end widget ui file-->

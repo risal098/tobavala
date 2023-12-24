@@ -2,13 +2,23 @@ namespace Screens{
     public class RegisterPage{
         public Gtk.Box thisPage;
         public string tet="ted";
+
         public RegisterPage(){
-            thisPage=new RegisterPageUi ();
+
             var tempLabelWidget=new Widgets.LabelRegister();
             var tempButtonWidget=new Widgets.ButtonRegister();
+            var tempEntryRegisterWidget = new Widgets.EntryRegister();
+
+
+            thisPage=new RegisterPageUi ();
+
+            thisPage.append(tempLabelWidget.label);
+            thisPage.append(tempEntryRegisterWidget.usernameRegis);
+            thisPage.append(tempEntryRegisterWidget.emailRegis);
+            thisPage.append(tempEntryRegisterWidget.passwordRegis);
             thisPage.append(tempLabelWidget.label);
             thisPage.append(tempButtonWidget.changeLogin);
-            
+
         }
 
     }

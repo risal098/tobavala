@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+<template class="WidgetsEntryLoginUi" parent="GtkBox">
+
+<child>
+  <object class="GtkEntry" id="usernameLogin">
+    <attributes>
+      <attribute name="weight" value="PANGO_WEIGHT_BOLD"/>
+      <attribute name="background" value="red" start="5" end="10"/>
+    </attributes>
+  </object>
+</child>
+
+<child>
+  <object class="GtkEntry" id="passwordLogin">
+    <attributes>
+      <attribute name="weight" value="PANGO_WEIGHT_BOLD"/>
+      <attribute name="background" value="red" start="5" end="10"/>
+    </attributes>
+  </object>
+</child>
+
+</template>
+</interface>
+

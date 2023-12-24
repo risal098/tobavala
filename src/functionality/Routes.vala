@@ -11,7 +11,7 @@ public class Navigator{
         print("pipis");
         Navigator.myHome.remove(oldNav);
 
-         
+        
   
       
     }
