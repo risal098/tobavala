@@ -37,10 +37,10 @@
        }
        construct{
           print("1");
-          var tempScreenMain=new Screens.SongGradePage();
+          var tempScreenMain=new Screens.RegisterPage();
           wow=new Gtk.Box(Gtk.Orientation.VERTICAL,5);
           this.set_child(wow);
-          wow.append(tempScreenMain.thisPages);
+          wow.append(tempScreenMain.thisPage);
           Navigator.myHome=wow;
           print("aku\n");
 
