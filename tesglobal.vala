@@ -17,8 +17,13 @@
 //              var first_list=main_list.get_array_element(0);
 //              print("%d",(int)first_list.get_int_element (0));
 //  }
-    
+    class Tes{
+        public string aw="w";
+    }
+    void apa(Tes w){
+        print("%s",w.aw);
+    }
 void main(){
-
+apa(new Tes());
     
 }

@@ -48,6 +48,7 @@
           var tempScreenMain=new Screens.HomePage();
           home.append(tempScreenMain.thisPage);
           Navigator.myHome=home;
+       //   Navigator.replacement(new Screens.HomePage());
          //   wow=new Gtk.Box(Gtk.Orientation.VERTICAL,5);
          //   this.set_child(wow);
          //   wow.append(tempScreenMain.thisPage);
