@@ -568,6 +568,7 @@ def giveTopMe():
 @app.route("/login",methods=["POST"])
 def login():
   #[username,password]
+  print(request.data)
   conn=sqlite3.connect("DB.db")
   cur=conn.cursor()
   data=json.loads(request.data)
