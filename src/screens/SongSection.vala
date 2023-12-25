@@ -22,7 +22,7 @@ namespace Screens{
             //  secondary.append(tempCard.thisbox);
             for(int i = 0; i<20; i++){
                 string a = "A Thousand Years"+i.to_string();
-                secondary.append(new Widgets.SongCard("/org/example/App/assets/AThousand_Years.png", a, "Christina Perri").thisbox);
+                secondary.append(new Widgets.SongCard("/org/example/App/assets/AThousand_Years.png", a, "Christina Perri","AThousandYears").thisbox);
             }
             
         }

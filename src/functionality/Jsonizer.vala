@@ -1,6 +1,6 @@
 public class Jsonizer{
-    //objjson -> string to json ready
-    //jssonObj -> json to object ready
+    //gen -> gobject to json ready
+    //parse -> json to gobject ready
     public static string genLogin(string username, string password){
             size_t length;
             var datas=new Json.Array ();
@@ -67,5 +67,10 @@ public class Jsonizer{
         string body=gen.to_data(out length);
         return body;
 }
-
+public static  int parseLoginRes(string response){
+        
+}
+public static  int parseRegRes(string response){
+        
+}
 }
