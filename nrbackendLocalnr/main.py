@@ -392,6 +392,20 @@ def getMyData(userId):
   data3=data1+data2
   conn.close()
   return data3
+def getSongPlayed(userId):
+  conn=sqlite3.connect("DB.db")
+  cur=conn.cursor()
+  cur.execute("SELECT  playedSong    FROM accountStatistic WHERE userId=?" ,(userId,))
+  data2=list(cur.fetchone())
+  conn.close()
+  return data2
+def updateSongPlayed(userId):
+  conn=sqlite3.connect("DB.db")
+  cur=conn.cursor()
+  cur.execute("UPDATE  accountStatistic SET playedSong = playedSong+1   WHERE userId=?" ,(userId,))
+  conn.commit()
+  conn.close()
+  
 #-------------------end atomic functional stat--------------------
 #------------end fungsional personalisasi---------
 #-----------------fungsional umum-----
@@ -514,6 +528,17 @@ def getAudio29(title,difficulty):
 #-----------END TESTING AREA--------------------------
 
 #-----------MANDATORY AREA---------------------------
+@app.route("/getPlayedSong",methods=["POST"])
+def getPlayedSongApi():
+  data=json.loads(request.data)
+  userId=data[0]
+  return json.dumps(getSongPlayed(userId)),200
+@app.route("/updatePlayedSong",methods=["POST"])
+def updatePlayedSongApi():
+  data=json.loads(request.data)
+  userId=data[0]
+  updateSongPlayed(userId)
+  return "ok",200
 @app.route("/getRedeemCode",methods=["GET"])
 def getRedeemCode():
   return genRedeem(),200

@@ -34,21 +34,22 @@ public class Request{
             return top20List;//indicate that lyric not found uyey
         
     }
-    public static string  login(string body){
+    public static string  login(string username, string password){
         Soup.Session session = new Soup.Session ();
         Soup.Message msg = new Soup.Message ("POST", "http://localhost:7100/login");
+        string body=Jsonizer.genLogin(username, password);
         msg.set_request ("application/json",Soup.MemoryUse.COPY, body.data);
         session.send_message (msg);
     
         string response=(string)msg.response_body.data;
         int stat=(int) msg.status_code;
-        
-            return response;//indicate that lyric not found uyey
+        return response;//indicate that lyric not found uyey
         
     }
-    public static string  register(string body){
+    public static string  register(string email,string username, string password){
         Soup.Session session = new Soup.Session ();
         Soup.Message msg = new Soup.Message ("POST", "http://localhost:7100/register");
+        string body=Jsonizer.genRegister(email,username,password);
         msg.set_request ("application/json",Soup.MemoryUse.COPY, body.data);
         session.send_message (msg);
     

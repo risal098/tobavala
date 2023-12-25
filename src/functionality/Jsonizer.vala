@@ -1,7 +1,7 @@
 public class Jsonizer{
     //objjson -> string to json ready
     //jssonObj -> json to object ready
-    public static string loginObjJson(string username, string password){
+    public static string genLogin(string username, string password){
             size_t length;
             var datas=new Json.Array ();
             print("1");
@@ -16,7 +16,7 @@ public class Jsonizer{
             return body;
     }
 
-    public static string registerObjJson(string email,string username, string password){
+    public static string genRegister(string email,string username, string password){
             size_t length;
             var datas=new Json.Array ();
             print("1");
@@ -31,9 +31,8 @@ public class Jsonizer{
             string body=gen.to_data(out length);
             return body;
     }
-    public static string askComparisonObjJson(string lyric1,string lyric2, string lyric3,
-        string ans1,string ans2, string ans3
-    ){
+    public static string genAskComparison(string lyric1,string lyric2, string lyric3,
+        string ans1,string ans2, string ans3){
         size_t length;
         var mainArray=new Json.Array ();
         var lirik=new Json.Array ();
@@ -56,4 +55,17 @@ public class Jsonizer{
         string body=gen.to_data(out length);
         return body;
     }
+    public static string genUserId(int userId){
+        size_t length;
+        var datas=new Json.Array ();
+        print("1");
+        datas.add_int_element(userId);  
+        var gen = new Json.Generator();
+        var root = new Json.Node(Json.NodeType.ARRAY);
+        root.set_array(datas);
+        gen.set_root(root);
+        string body=gen.to_data(out length);
+        return body;
+}
+
 }
