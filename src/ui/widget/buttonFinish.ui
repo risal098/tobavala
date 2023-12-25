@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+<template class="WidgetsButtonFinishUi" parent="GtkBox">
+<property name="halign">center</property>
+<child>
+	<object class="GtkButton" id="fin">
+    <property name="name">fin</property>
+    <property name="label">Finish Review</property>
+    </object>
+</child>
+</template>
+</interface>

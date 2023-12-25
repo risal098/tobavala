@@ -1,0 +1,43 @@
+#TitleLead{
+    padding-bottom: 30px;
+    font-size: 30px;
+    padding-top: 20px;
+    border-bottom: 1px solid black;
+    color: white;
+    background-image: linear-gradient(to right,rgb(0, 247, 255), rgb(50, 132, 255));
+}
+
+#grade{
+    font-size: 40px;
+    border-radius: 100px;
+    border: 3px solid rgb(50, 132, 255);
+
+}
+
+#boxLyrics{
+    font-size: 18px;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#boxTitle{
+    font-size: 25px;
+    font-weight: bold;
+}
+#fin{
+    font-size: 18px;
+    color: white;
+    background: rgb(50, 132, 255);
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#fin:hover{
+    background: rgb(0, 91, 228);
+}

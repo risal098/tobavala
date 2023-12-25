@@ -12,6 +12,7 @@ screens=[
  './screens/SongAns.vala',
  './screens/LeaderBoard.vala',
   './screens/home.vala',
+  './screens/SongGrade.vala'
 
  ]
 
@@ -29,7 +30,9 @@ widget=[
   './widget/labelHome.vala',
   './widget/progressHome.vala',
   './widget/cardHome.vala',
-  
+  './widget/gradeBox.vala',
+  './widget/resultBox.vala',
+  './widget/buttonFinish.vala'
   ]
   
 controllers=[

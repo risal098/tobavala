@@ -11,6 +11,7 @@
       <file>ui/screens/leaderBoard.ui</file>
       <file>ui/screens/songAns.ui</file>
       <file>ui/screens/home.ui</file>
+      <file>ui/screens/songGrade.ui</file>
       <!--end screens-->
       
       <!--widget-->
@@ -27,6 +28,9 @@
       <file>ui/widget/labelHome.ui</file>
       <file>ui/widget/progressHome.ui</file>
       <file>ui/widget/cardHome.ui</file>
+      <file>ui/widget/gradeBox.ui</file>
+      <file>ui/widget/resultBox.ui</file>
+      <file>ui/widget/buttonFinish.ui</file>
       <!--end widget-->
       
     <!-- end widget ui file-->
@@ -40,6 +44,7 @@
     <file>assets/userBox.css</file>
     <file>assets/songAns.css</file>
     <file>assets/style.css</file>
+    <file>assets/songGrade.css</file>
 
     <!-- end css -->
 
