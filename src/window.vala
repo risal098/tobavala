@@ -16,36 +16,36 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-namespace Blankgtk {
+ namespace Blankgtk {
     
-    [GtkTemplate (ui = "/org/example/App/window.ui")]
-   
-    public class Window : Gtk.ApplicationWindow {
-       public string tistes="terpnaggil";
-       public Gtk.Box wow;
-    [GtkChild]
-      public unowned Gtk.Box home;
+   [GtkTemplate (ui = "/org/example/App/window.ui")]
+  
+   public class Window : Gtk.ApplicationWindow {
+      public string tistes="terpnaggil";
+      public Gtk.Box wow;
+   [GtkChild]
+     public unowned Gtk.Box home;
 
-        public Window (Gtk.Application app) {
-           print("2");
-            Object (application: app);
-            var css_provider = new Gtk.CssProvider ();
-            string resc = "/org/example/App/assets/style.css";
-            css_provider.load_from_resource (resc);
-            Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
-            
-        }
-        construct{
-           print("1");
-           var tempScreenMain=new Screens.SongSectionPage();
-           wow=new Gtk.Box(Gtk.Orientation.VERTICAL,5);
-           this.set_child(wow);
-           wow.append(tempScreenMain.thisPages);
-           Navigator.myHome=wow;
-           print("aku\n");
+       public Window (Gtk.Application app) {
+          print("2");
+           Object (application: app);
+           var css_provider = new Gtk.CssProvider ();
+           string resc = "/org/example/App/assets/style.css";
+           css_provider.load_from_resource (resc);
+           Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
+           
+       }
+       construct{
+          print("1");
+          var tempScreenMain=new Screens.SongGradePage();
+          wow=new Gtk.Box(Gtk.Orientation.VERTICAL,5);
+          this.set_child(wow);
+          wow.append(tempScreenMain.thisPages);
+          Navigator.myHome=wow;
+          print("aku\n");
 
-        }
+       }
 
-        
-    }
+       
+   }
 }

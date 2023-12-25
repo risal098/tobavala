@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+<template class="WidgetsResultBoxUi" parent="GtkBox">
+<property name ="orientation">vertical</property>
+<property name="halign">center</property>
+<property name="valign">center</property>
+<property name = "spacing">4</property>
+<child>
+    <object class="GtkLabel" id="type">
+        <property name="name">boxTitle</property>
+        <property name="label">Right Ans</property>
+    </object>
+</child>
+<child>
+    <object class="GtkBox">
+        <property name ="orientation">vertical</property>
+        <property name = "spacing">10</property>
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+        <property name="name">boxLyrics</property>
+        <child>
+            <object class="GtkBox">
+                <property name="width-request">300</property>
+                <child>
+                    <object class="GtkLabel" id="label1">
+                        <property name="halign">start</property> 
+                        <property name="label">"haloo, hjakkkkkkkkllll lllllllllllllllll llllllllllllllll llllllllllllllllllllllllllllkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkk"</property>
+                        
+                        <property name="wrap">true</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+        <child>
+            <object class="GtkBox">
+                <property name="width-request">300</property>
+                <child>
+                    <object class="GtkLabel" id="label2">
+                        <property name="halign">start</property> 
+                        <property name="label">"haloo, hjakkkkkkkkllll lllllllllllllllll llllllllllllllll llllllllllllllllllllllllllllkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkk"</property>
+                        
+                        <property name="wrap">true</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+        <child>
+            <object class="GtkBox">
+                <property name="width-request">300</property>
+                <child>
+                    <object class="GtkLabel" id="label3">
+                        <property name="halign">start</property> 
+                        <property name="label">"haloo, hjakkkkkkkkllll lllllllllllllllll llllllllllllllll llllllllllllllllllllllllllllkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkk"</property>
+                        
+                        <property name="wrap">true</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+    </object>
+</child>
+
+
+
+
+</template>
+</interface>
