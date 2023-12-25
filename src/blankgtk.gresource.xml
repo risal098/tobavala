@@ -9,6 +9,7 @@
       <file>ui/screens/register.ui</file>
       <file>ui/screens/songsection.ui</file> 
       <file>ui/screens/leaderBoard.ui</file>
+      <file>ui/screens/songAns.ui</file>
       <!--end screens-->
       
       <!--widget-->
@@ -18,6 +19,8 @@
       <file>ui/widget/labelRegister.ui</file>
       <file>ui/widget/songCard.ui</file> 
       <file>ui/widget/userbox.ui</file> 
+      <file>ui/widget/songForm.ui</file>
+      <file>ui/widget/songCard2.ui</file>
       <!--end widget-->
       
     <!-- end widget ui file-->
@@ -29,6 +32,7 @@
     <!-- css -->
     <file>assets/songcard.css</file>
     <file>assets/userBox.css</file>
+    <file>assets/songAns.css</file>
     <!-- end css -->
 
   </gresource>

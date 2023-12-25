@@ -33,5 +33,17 @@
     border-bottom: 1px solid black;
     color: white;
     background-image: linear-gradient(to right,rgb(0, 247, 255), rgb(50, 132, 255));
-
+}
+#sbmt{
+    background: rgb(50, 132, 255);
+    color: white;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#sbmt:hover{
+    background: rgb(0, 95, 238);
+}
+#buttonPlay{
+    margin-right: 10px;
 }

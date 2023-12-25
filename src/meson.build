@@ -8,7 +8,8 @@ blankgtk_sources = [
 screens=[
   './screens/login.vala',
  './screens/register.vala',
- './screens/SongSection.vala',
+ './screens/SongSection.vala', 
+ './screens/SongAns.vala',
  './screens/LeaderBoard.vala']
 widget=[
   './widget/labelLogin.vala', 
@@ -16,7 +17,10 @@ widget=[
   './widget/submitLogin.vala',
   './widget/submitRegister.vala',
   './widget/songCard.vala',
-  './widget/userBox.vala']
+  './widget/userBox.vala',
+  './widget/songForm.vala',
+  './widget/songCard-looksOnly.vala']
+  
 controllers=[
   './controllers/AccountData.vala', 
   './controllers/Leaderboard.vala', 

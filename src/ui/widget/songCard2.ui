@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+<template class="WidgetsSongCardUi2" parent="GtkBox">
+<property name ="orientation">vertical</property>
+<child>
+    <object class="GtkBox" id="thisbox">
+        <property name="valign">center</property>
+        <property name="name">box1</property>
+        <property name="homogeneous">true</property>
+        <property name ="orientation">horizontal</property>
+        <child>
+            <object class = "GtkBox">
+                <property name="name">gambar</property>
+                <child>
+                    <object class="GtkImage" id="songImage">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="visible">True</property>
+                        <property name="pixel_size">100</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+        <child>
+            <object class="GtkBox" id="labelBox">
+                <property name ="orientation">vertical</property>
+                <property name = "spacing">10</property>
+                <child>
+                    <object class="GtkLabel">
+                        <property name="label"></property>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkLabel" id="songLabel">
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkLabel" id="singerLabel">
+                    </object>
+                </child>
+            </object>
+            
+        </child>
+        <child>
+            <object class="GtkBox" id="boxButton">
+                <property name="orientation">horizontal</property>
+                <property name="homogeneous">true</property>
+                <property name="height-request">30</property>
+                <child>
+                    <object class="GtkBox" >
+                    </object>
+                </child>
+                <child>
+                  
+                </child>
+                
+                
+            </object>
+        </child>
+    </object>
+</child>
+</template>
+</interface>
