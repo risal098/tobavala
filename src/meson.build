@@ -14,6 +14,11 @@ widget=[
   './widget/submitLogin.vala',
   './widget/submitRegister.vala']
 controllers=[
+  './controllers/AccountData.vala', 
+  './controllers/Leaderboard.vala', 
+  './controllers/SongGrade.vala', 
+  './controllers/SongSection.vala', 
+  './controllers/StartSong.vala', 
   './controllers/tes.vala', 
 ]
 functionality=[
