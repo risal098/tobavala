@@ -7,7 +7,12 @@
     <child type="titlebar">
       <object class="GtkHeaderBar" id="header_bar">
         <child type="end">
-          <object class="GtkMenuButton">
+          <object class="GtkButton" id="fs">
+            <child>
+            <object class="GtkImage" id="full">
+           
+            </object>
+            </child>
           </object>
         </child>
       </object>

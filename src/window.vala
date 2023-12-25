@@ -25,7 +25,11 @@
       public Gtk.Box wow;
    [GtkChild]
      public unowned Gtk.Box home;
-
+      [GtkChild]
+      public unowned Gtk.Button fs;
+      [GtkChild]
+      public unowned Gtk.Image full;
+      public int isFullscreen=0;
        public Window (Gtk.Application app) {
           print("2");
            Object (application: app);
@@ -37,15 +41,31 @@
        }
        construct{
           print("1");
-          var tempScreenMain=new Screens.RegisterPage();
-          wow=new Gtk.Box(Gtk.Orientation.VERTICAL,5);
-          this.set_child(wow);
-          wow.append(tempScreenMain.thisPage);
-          Navigator.myHome=wow;
-          print("aku\n");
+          full.set_from_icon_name("view-fullscreen");
+          
+          
+          fs.clicked.connect(ufullscreen);
+          var tempScreenMain=new Screens.HomePage();
+          home.append(tempScreenMain.thisPage);
+          Navigator.myHome=home;
+         //   wow=new Gtk.Box(Gtk.Orientation.VERTICAL,5);
+         //   this.set_child(wow);
+         //   wow.append(tempScreenMain.thisPage);
+         //   Navigator.myHome=wow;
+         //   print("aku\n");
 
        }
-
+       public void ufullscreen() {
+         if(this.isFullscreen==0){
+            isFullscreen=1;
+            this.maximize();
+            full.set_from_icon_name("view-restore");
+         }else{
+            isFullscreen=0;
+            this.unmaximize();
+            full.set_from_icon_name("view-fullscreen");
+         }
+       }
        
    }
 }
