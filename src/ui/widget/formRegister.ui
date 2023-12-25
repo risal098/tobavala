@@ -12,6 +12,14 @@
 
 
     <child>
+      <object class="GtkLabel" id="regisLabel">
+        <style>
+          <class name="labelRegis"/>
+        </style>
+      </object>
+    </child>
+
+    <child>
       <object class="GtkEntry" id="usernameRegister">
       <property name="placeholder-text">Username</property>
         <attributes>
@@ -45,6 +53,7 @@
 
     <child>
       <object class="GtkButton" id="regisBtn">
+        <property name="name">regbtn</property>
         <property name="label">Register</property>
       </object>
     </child>

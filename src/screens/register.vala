@@ -11,7 +11,7 @@ namespace Screens{
 
             thisPage=new RegisterPageUi ();
 
-            thisPage.append(tempLabelWidget.label);
+            //  thisPage.append(tempLabelWidget.label);
             thisPage.append(tempFormRegisterWidget.formregWrapper);
 
         }

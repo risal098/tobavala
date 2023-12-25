@@ -4,6 +4,9 @@ namespace Widgets{
       public Gtk.Entry password;
       public Gtk.Box formWrapper;
       public Gtk.Button loginBtn;
+      public Gtk.Label titleLogin;
+      //  public Gtk.Image imgLogin;
+
       public bool isClicked = false;
 
      public void get_input_val(Gtk.Entry data1, Gtk.Entry data2) {
@@ -22,7 +25,12 @@ namespace Widgets{
          loginBtn = tempBox.loginBtn;
          username = tempBox.usernameLogin;
          password = tempBox.passwordLogin;
+         titleLogin = tempBox.loginLabel;
+         //  imgLogin = tempBox.loginImg;
 
+
+         titleLogin.set_label("Welcome To Toba App");
+         //  imgLogin.set_from_resource ("/org/gnome/Example/images/login_pict.png");
          loginBtn.clicked.connect(()=>get_input_val(data1, data2));
 
 
@@ -50,6 +58,10 @@ namespace Widgets{
       public unowned Gtk.Box formWrapper;
       [GtkChild]
       public unowned Gtk.Button loginBtn;
+      [GtkChild]
+      public unowned Gtk.Label loginLabel;
+      //  [GtkChild]
+      //  public unowned Gtk.Image loginImg;
 
     }
 

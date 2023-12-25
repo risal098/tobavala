@@ -2,36 +2,6 @@
 <interface>
 <template class="WidgetsCardHomeUi" parent="GtkBox">
 
-<!-- <child> -->
-<!-- 	<object class="GtkBox" id="changeToBox"> -->
-<!-- 	  <property name="orientation">vertical</property> -->
-<!--     <property name="spacing">20</property> -->
-<!-- 	  <style> -->
-<!-- 	    <class name="cardFeature"/> -->
-<!-- 	  </style> -->
-
-<!-- 	   <child> -->
-<!-- 	    <object class="GtkLabel" id="cardBoxTitle"> -->
-<!-- 	      <property name="wrap">true</property> -->
-<!--         <style> -->
-<!-- 	        <class name="cardTitle"/> -->
-<!-- 	      </style> -->
-<!-- 	    </object> -->
-<!-- 	   </child> -->
-
-<!-- 	  <child> -->
-<!-- 	    <object class="GtkLabel" id="cardLabel"> -->
-<!-- 	      <property name="wrap">true</property> -->
-<!--         <style> -->
-<!-- 	        <class name="cardDesc"/> -->
-<!-- 	      </style> -->
-<!-- 	    </object> -->
-<!-- 	   </child> -->
-
-
-<!--   </object> -->
-<!-- </child> -->
-
 <child>
   <object class="GtkButton" id="changeToPage">
      <property name="name">cardFeature</property>
@@ -49,7 +19,7 @@
 
      <child>
        <object class="GtkLabel" id="cardLabel">
-        <property name="wrap">true</property>
+        <!-- <property name="wrap">true</property> -->
          <style>
           <class name="cardDesc"/>
         </style>
@@ -67,7 +37,6 @@
 
     <child>
       <object class="GtkLabel" id="cardBoxTitle2">
-        <property name="wrap">true</property>
         <style>
           <class name="cardTitle2"/>
         </style>
@@ -77,7 +46,6 @@
 
      <child>
        <object class="GtkLabel" id="cardLabel2">
-        <property name="wrap">true</property>
          <style>
           <class name="cardDesc2"/>
         </style>
