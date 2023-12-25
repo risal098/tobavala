@@ -674,7 +674,9 @@ def getLyric(title,difficulty):
 def getPointsAnswer():
   #request = [[lyric1,lyric2,lyric3]
     #        [userly1,userly2,userly3]]
+  print("mandalaaran",request.data)
   data=json.loads(request.data)
+  
   result=[]
   lyric1=data[0][0].replace(",","").replace(".","").replace("?","").replace("!","").replace("'","").replace("\n","").lower()
   lyric2=data[0][1].replace(",","").replace(".","").replace("?","").replace("!","").replace("'","").replace("\n","").lower()

@@ -46,6 +46,8 @@ controllers=[
 ]
 functionality=[
   './functionality/Routes.vala', 
+  './functionality/Http.vala', 
+  './functionality/Jsonizer.vala', 
 ]
 blankgtk_deps = [
   dependency('gtk4'),
