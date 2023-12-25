@@ -10,7 +10,11 @@ screens=[
  './screens/register.vala',
  './screens/SongSection.vala', 
  './screens/SongAns.vala',
- './screens/LeaderBoard.vala']
+ './screens/LeaderBoard.vala',
+  './screens/home.vala',
+
+ ]
+
 widget=[
   './widget/labelLogin.vala', 
   './widget/labelRegister.vala',
@@ -19,7 +23,14 @@ widget=[
   './widget/songCard.vala',
   './widget/userBox.vala',
   './widget/songForm.vala',
-  './widget/songCard-looksOnly.vala']
+  './widget/songCard-looksOnly.vala',
+  './widget/formLogin.vala',
+  './widget/formRegister.vala',
+  './widget/labelHome.vala',
+  './widget/progressHome.vala',
+  './widget/cardHome.vala',
+  
+  ]
   
 controllers=[
   './controllers/AccountData.vala', 
