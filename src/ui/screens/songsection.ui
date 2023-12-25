@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+<template class="ScreensSongSectionPageUi" parent="GtkBox">
+<property name="orientation">vertical</property>
+<child>
+    <object class="GtkButton">
+        <property name="label">Back</property>
+    </object>
+</child>
+<child>
+    <object class="GtkLabel">
+        <property name="label">Song Section</property>
+        <property name="name">Title</property>
+    </object>
+</child>
+<child>
+    <object class="GtkBox">
+        <property name="name">TitlePad</property>
+    </object>
+</child>
+<child>
+    <object class="GtkScrolledWindow" id="mainBox">
+        <property name="min-content-height">830</property>
+        <property name="min-content-width">800</property> 
+        <child>
+            <object class="GtkBox" id="secondaryBox">
+                <property name="orientation">vertical</property>
+            </object>
+        </child>
+        
+    </object>
+</child>
+
+</template>
+</interface>

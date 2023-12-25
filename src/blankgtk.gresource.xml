@@ -7,6 +7,8 @@
       <!--screens-->
       <file>ui/screens/login.ui</file>
       <file>ui/screens/register.ui</file>
+      <file>ui/screens/songsection.ui</file> 
+      <file>ui/screens/leaderBoard.ui</file>
       <!--end screens-->
       
       <!--widget-->
@@ -14,8 +16,20 @@
       <file>ui/widget/submitRegister.ui</file>
       <file>ui/widget/labelLogin.ui</file>
       <file>ui/widget/labelRegister.ui</file>
+      <file>ui/widget/songCard.ui</file> 
+      <file>ui/widget/userbox.ui</file> 
       <!--end widget-->
       
     <!-- end widget ui file-->
+
+    <!-- images -->
+    <file>assets/AThousand_Years.png</file> 
+    <!-- End Images -->
+
+    <!-- css -->
+    <file>assets/songcard.css</file>
+    <file>assets/userBox.css</file>
+    <!-- end css -->
+
   </gresource>
 </gresources>

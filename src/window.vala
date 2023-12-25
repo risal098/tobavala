@@ -34,10 +34,10 @@ namespace Blankgtk {
         }
         construct{
            print("1");
-           var tempScreenMain=new Screens.RegisterPage();
-           wow=new Gtk.Box(Gtk.Orientation.HORIZONTAL,5);
+           var tempScreenMain=new Screens.SongSectionPage();
+           wow=new Gtk.Box(Gtk.Orientation.VERTICAL,5);
            this.set_child(wow);
-           wow.append(tempScreenMain.thisPage);
+           wow.append(tempScreenMain.thisPages);
            Navigator.myHome=wow;
            print("aku\n");
 
