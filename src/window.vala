@@ -29,7 +29,10 @@ namespace Blankgtk {
         public Window (Gtk.Application app) {
            print("2");
             Object (application: app);
-            
+            var css_provider = new Gtk.CssProvider ();
+            string resc = "/org/example/App/assets/style.css";
+            css_provider.load_from_resource (resc);
+            Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
             
         }
         construct{

@@ -1,0 +1,97 @@
+.myWrapper {
+  margin: 50px 30px 30px 30px;
+
+}
+
+.regWrapper {
+  margin: 50px 30px 25px 30px;
+}
+
+.logbutton {
+  margin: 0 30px 0 30px;
+}
+
+.regbutton {
+  margin: 0 30px 0 30px;
+}
+
+.progressCard {
+  border: 1px solid blue;
+  border-radius: 18px;
+  padding: 10px;
+  margin: 30px 70px 20px 70px;
+}
+
+.myProgress {
+  margin-top: 30px;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.progressLabel {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+#cardFeature {
+  border: 1px solid blue;
+  border-radius: 18px;
+  padding: 20px 30px;
+  margin: 30px 70px 20px 70px;
+  background: linear-gradient(to right, #D9E2F3, #86B2FD);
+
+}
+
+#cardFeature:hover {
+  background: linear-gradient(to right, #B9D1F7, #547BE4);
+}
+
+/* .cardTitle { */
+/*   color: white; */
+/*   font-size: 24px; */
+/*   font-weight: 600; */
+/*   line-height: 0.2; */
+/*   margin-top: 10px; */
+
+/* } */
+
+.cardDesc {
+  border: none;
+  /* border-radius: 18px; */
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#cardFeature2 {
+  border: 1px solid blue;
+  border-radius: 18px;
+  padding: 20px 0;
+  margin: 30px 70px 20px 70px;
+  background: linear-gradient(to right, #D9E2F3, #86B2FD);
+  /* background: #B8D0F6; */
+}
+
+#cardFeature2:hover {
+  background: linear-gradient(to right, #B9D1F7, #547BE4);
+}
+
+
+
+/* .cardTitle2 { */
+/*   color: white; */
+/*   font-size: 24px; */
+/*   font-weight: 600; */
+/*   line-height: 0.2; */
+/*   margin-top: 10px; */
+
+/* } */
+
+.cardDesc2 {
+  border: none;
+  /* border-radius: 18px; */
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}

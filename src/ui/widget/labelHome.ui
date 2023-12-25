@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+<template class="WidgetsLabelHomeUi" parent="GtkBox">
+<child>
+	<object class="GtkLabel" id="homeLabel">
+	  <style>
+	    <class name="myProgress"/>
+	  </style>
+  </object>
+</child>
+</template>
+</interface>
