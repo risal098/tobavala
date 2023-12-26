@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+<template class="WidgetsButtonRegisterUi" parent="GtkBox">
+<child>
+	<object class="GtkButton" id="changeLogin">
+    <property name="label">go to login</property>
+    </object>
+</child>
+</template>
+</interface>

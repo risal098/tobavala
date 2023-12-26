@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+<template class="WidgetsFormLoginUi" parent="GtkBox">
+
+
+<child>
+  <object class="GtkBox" id="formWrapper">
+  <property name="orientation">vertical</property>
+  <property name="spacing">15</property>
+  <style>
+    <class name="myWrapper"/>
+  </style>
+ 
+  <child>
+    <object class="GtkLabel" id="loginLabel">
+      <style>
+        <class name="labelLogin"/>
+      </style>
+    </object>
+  </child>
+
+  <child>
+    <object class="GtkEntry" id="usernameLogin">
+      <property name="placeholder-text">Username</property>
+      <attributes>
+        <attribute name="weight" value="PANGO_WEIGHT_BOLD"/>
+        <!-- <attribute name="background" value="red" start="5" end="10"/> -->
+      </attributes>
+    </object>
+  </child>
+
+  <child>
+    <object class="GtkEntry" id="passwordLogin">
+      <property name="placeholder-text">Password</property>
+      <property name="visibility">FALSE</property>
+      <attributes>
+        <attribute name="weight" value="PANGO_WEIGHT_BOLD"/>
+        <!-- <attribute name="background" value="red" start="5" end="10"/> -->
+      </attributes>
+    </object>
+  </child>
+
+  <child>
+    <object class="GtkButton" id="loginBtn">
+      <property name="name">logbtn</property>
+      <property name="label">Login</property>
+    </object>
+  </child>
+
+  </object>
+</child>
+
+
+</template>
+</interface>
+
