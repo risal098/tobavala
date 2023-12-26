@@ -7,7 +7,12 @@ namespace Widgets{
         public Gtk.Box labelBox;
         public Gtk.Label singerLabel;
         public Gtk.CssProvider css_style;
+        public Gtk.Button playBtn;
         public string getTitle;
+
+        public void clicked(){
+            print("uyay");
+        }
     //     public Blankgtk.Window context;
     //     public Gtk.Box navPage;
        public SongCard(string path, string songLabel, string singer,string getTitle){
@@ -20,6 +25,7 @@ namespace Widgets{
          );
           var tempBox=new SongCardUi();
           thisbox = tempBox.thisbox;
+          playBtn = tempBox.playButton;
           thisImage = tempBox.songImage;
           thisLabel = tempBox.songLabel;
           labelBox = tempBox.labelBox;
@@ -29,6 +35,8 @@ namespace Widgets{
           this.getTitle=getTitle;
           thisImage.set_from_resource(path);
           thisLabel.set_label(songLabel);
+
+          playBtn.clicked.connect(clicked);
        }
     }
  
@@ -44,7 +52,9 @@ namespace Widgets{
       [GtkChild]
        public unowned Gtk.Box labelBox; 
       [GtkChild]
-       public unowned Gtk.Label singerLabel; 
+       public unowned Gtk.Label singerLabel;
+       [GtkChild]
+       public unowned Gtk.Button playButton; 
        
  
      }

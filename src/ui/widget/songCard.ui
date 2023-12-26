@@ -7,6 +7,7 @@
         <property name="name">box1</property>
         <property name = "spacing">20</property>
         <property name ="orientation">horizontal</property>
+        <property name= "homogeneous">true</property>
         <child>
             <object class = "GtkBox">
                 <property name="name">gambar</property>
@@ -39,6 +40,25 @@
                 </child>
             </object>
             
+        </child>
+        <child>
+            <object class="GtkBox">
+                <property name= "valign">center</property>
+                <property name= "halign">end</property>
+                <property name ="orientation">vertical</property>
+                <child>
+                    <object class="GtkBox">
+                        <child>
+                            <object class="GtkButton" id="playButton">
+                                <property name= "valign">center</property>
+                                <property name="name">buttonPlay</property>
+                                <property name="label">play</property>
+                            </object>
+                        </child>
+                    </object>
+                </child>
+                
+            </object>
         </child>
     </object>
 </child>
