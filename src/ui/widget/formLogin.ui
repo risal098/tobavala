@@ -6,6 +6,7 @@
 <child>
   <object class="GtkBox" id="formWrapper">
   <property name="orientation">vertical</property>
+  <property name="halign">center</property>
   <property name="spacing">15</property>
   <style>
     <class name="myWrapper"/>
@@ -44,6 +45,13 @@
     <object class="GtkButton" id="loginBtn">
       <property name="name">logbtn</property>
       <property name="label">Login</property>
+    </object>
+  </child>
+
+  <child>
+    <object class="GtkButton" id="loginToRegisBtn">
+      <property name="name">logtoregbtn</property>
+      <property name="label">Registration</property>
     </object>
   </child>
 

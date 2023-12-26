@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
 <template class="WidgetsProgressHomeUi" parent="GtkBox">
-
+<!-- <property name="orientation">vertical</property> -->
 <child>
 	<object class="GtkBox" id="cardProgress">
 		<property name="orientation">vertical</property>
+		<property name="halign">center</property>
+        
 		<property name="spacing">20</property>
 		<style>
 			<class name="progressCard"/>
