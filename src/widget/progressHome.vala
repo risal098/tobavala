@@ -9,7 +9,6 @@ namespace Widgets{
 
 
 
-
     public int persenStat = 15;
 
     public ProgressHome(){
@@ -20,8 +19,8 @@ namespace Widgets{
       persenProg = tempBox.persenBox;
       labelPers = tempBox.persenLabel;
 
-      circularProg.set_size_request(-1,150);
-      persenProg.set_size_request(-1, 150);
+      circularProg.set_size_request(-1, 190);
+      persenProg.set_size_request(-1, 190);
 
       labelPers.set_label("15%");
       //  labelPers.set_justify(2);
@@ -40,6 +39,5 @@ namespace Widgets{
     public unowned Gtk.Box persenBox;
     [GtkChild]
     public unowned Gtk.Label persenLabel;
-
    }
 }

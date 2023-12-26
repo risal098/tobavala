@@ -2,85 +2,61 @@
 <interface>
 <template class="WidgetsCardHomeUi" parent="GtkBox">
 
-
-
 <child>
-	<object class="GtkBox" id="cardWrapper">
-		<property name="orientation">vertical</property>
-		<property name="halign">center</property>
-        
-		<property name="spacing">20</property>
-		<style>
-			<class name="wrapperCard"/>
-		</style>
+  <object class="GtkButton" id="changeToPage">
+     <property name="name">cardFeature</property>
 
-      
 
     <child>
-      <object class="GtkButton" id="changeToPage">
-        <property name="name">cardFeature</property>
-
-
-        <child>
-          <object class="GtkLabel" id="cardBoxTitle">
-            <!-- <property name="wrap">true</property> -->
-            <style>
-              <class name="cardTitle"/>
-            </style>
-          </object>
-        </child>
-
-
-        <child>
-          <object class="GtkLabel" id="cardLabel">
-            <!-- <property name="wrap">true</property> -->
-            <style>
-              <class name="cardDesc"/>
-            </style>
-
-          </object>
-        </child>
-
-
-      </object>
-    </child>
-
-    <child>
-      <object class="GtkButton" id="changeToPage2">
-        <property name="name">cardFeature2</property>
-
-        <child>
-          <object class="GtkLabel" id="cardBoxTitle2">
-            <style>
-              <class name="cardTitle2"/>
-            </style>
-
-          </object>
-        </child>
-
-        <child>
-          <object class="GtkLabel" id="cardLabel2">
-            <style>
-              <class name="cardDesc2"/>
-            </style>
-
-          </object>
-        </child>
-
-
-
+      <object class="GtkLabel" id="cardBoxTitle">
+        <!-- <property name="wrap">true</property> -->
+        <style>
+          <class name="cardTitle"/>
+        </style>
       </object>
     </child>
 
 
+     <child>
+       <object class="GtkLabel" id="cardLabel">
+        <!-- <property name="wrap">true</property> -->
+         <style>
+          <class name="cardDesc"/>
+        </style>
 
-
+       </object>
+     </child>
 
 
   </object>
 </child>
 
+<child>
+  <object class="GtkButton" id="changeToPage2">
+     <property name="name">cardFeature2</property>
 
+    <child>
+      <object class="GtkLabel" id="cardBoxTitle2">
+        <style>
+          <class name="cardTitle2"/>
+        </style>
+
+      </object>
+    </child>
+
+     <child>
+       <object class="GtkLabel" id="cardLabel2">
+         <style>
+          <class name="cardDesc2"/>
+        </style>
+
+       </object>
+     </child>
+
+
+
+  </object>
+</child>
 
 </template>
 </interface>

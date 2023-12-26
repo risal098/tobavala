@@ -8,9 +8,6 @@ namespace Widgets{
       public Gtk.Label descLabel2;
       public Gtk.Label titleLabel2;
 
-      public Gtk.Box cardWrap;
-
-
 
 
       public CardHome(){
@@ -22,8 +19,6 @@ namespace Widgets{
          changeLyr2 = tempBox.changeToPage2;
          descLabel2 = tempBox.cardLabel2;
          titleLabel2 = tempBox.cardBoxTitle2;
-         cardWrap = tempBox.cardWrapper;
-
 
 
          // titleLabel.set_label("Guess The Lyrics");
@@ -65,14 +60,13 @@ namespace Widgets{
       public unowned Gtk.Label cardLabel;
       [GtkChild]
       public unowned Gtk.Label cardBoxTitle;
+
       [GtkChild]
       public unowned Gtk.Button changeToPage2;
       [GtkChild]
       public unowned Gtk.Label cardLabel2;
       [GtkChild]
       public unowned Gtk.Label cardBoxTitle2;
-      [GtkChild]
-      public unowned Gtk.Box cardWrapper;
 
 
     }

@@ -21,8 +21,8 @@ namespace Screens{
             thisPage = new HomePageUi();
             thisPage.append(tempLabelWidget.label);
             thisPage.append(tempProgressWidget.cardProg);
-            thisPage.append(tempCardWidget.cardWrap);
-            //  thisPage.append(tempCardWidget.changeLyr2);
+            thisPage.append(tempCardWidget.changeLyr);
+            thisPage.append(tempCardWidget.changeLyr2);
 
             // thisPage.append(tempEntryLoginWidget.formWrapper);
 

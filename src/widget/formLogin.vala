@@ -6,8 +6,6 @@ namespace Widgets{
       public Gtk.Button loginBtn;
       public Gtk.Label titleLogin;
       //  public Gtk.Image imgLogin;
-      public Gtk.Button logresBtn;
-
 
       public bool isClicked = false;
 
@@ -28,8 +26,6 @@ namespace Widgets{
          username = tempBox.usernameLogin;
          password = tempBox.passwordLogin;
          titleLogin = tempBox.loginLabel;
-         logresBtn = tempBox.loginToRegisBtn;
-
          //  imgLogin = tempBox.loginImg;
 
 
@@ -66,8 +62,6 @@ namespace Widgets{
       public unowned Gtk.Label loginLabel;
       //  [GtkChild]
       //  public unowned Gtk.Image loginImg;
-      [GtkChild]
-      public unowned Gtk.Button loginToRegisBtn;
 
     }
 

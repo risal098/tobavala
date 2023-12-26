@@ -6,8 +6,6 @@ namespace Widgets{
       public Gtk.Box formregWrapper;
       public Gtk.Button regisBtn;
       public Gtk.Label titleRegis;
-      public Gtk.Button registologBtn;
-
 
 
       public void get_input_val(Gtk.Entry data1, Gtk.Entry data2, Gtk.Entry data3) {
@@ -32,8 +30,6 @@ namespace Widgets{
          passwordRegis = tempBox.passwordRegister;
          regisBtn = tempBox.regisBtn;
          titleRegis = tempBox.regisLabel;
-         registologBtn = tempBox.regisToLoginBtn;
-
 
          titleRegis.set_label("Register Now");
          regisBtn.clicked.connect(()=>get_input_val(data1, data2, data3));
@@ -68,8 +64,6 @@ namespace Widgets{
       public unowned Gtk.Button regisBtn;
       [GtkChild]
       public unowned Gtk.Label regisLabel;
-      [GtkChild]
-      public unowned Gtk.Button regisToLoginBtn;
 
     }
  }
