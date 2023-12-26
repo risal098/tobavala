@@ -37,7 +37,7 @@ namespace Widgets{
          var tempPage=new Screens.RegisterPage();
          print("sa--");
          print("lahan\n");
-         Navigator.replace(tempPage.thisPage);
+         Navigator.replacement(new Screens.LeaderBoardPage());
       }
 
 
@@ -47,7 +47,7 @@ namespace Widgets{
          var tempPage=new Screens.RegisterPage();
          print("sa--");
          print("lahan\n");
-         Navigator.replace(tempPage.thisPage);
+         Navigator.replacement(new Screens.SongSectionPage());
       }
    }
 

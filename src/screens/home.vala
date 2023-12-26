@@ -1,7 +1,15 @@
 namespace Screens{
-    public class HomePage{
+    public class HomePage:Page{
         public Gtk.Box thisPage;
-
+        public override Gtk.Box _thisPage{
+            get {
+                return this.thisPage;
+            }
+            
+            set {
+                this.thisPage = value;
+            }
+        }
         public HomePage(){
 
             var tempLabelWidget = new Widgets.LabelHome();
@@ -36,14 +44,14 @@ namespace Screens{
 /*
 
  public class HomePage:Page{
-        public  Gtk.Box _thisPage;
-        public override Gtk.Box thisPage{
+        public  Gtk.Box thisPage;
+        public override Gtk.Box _thisPage{
             get {
-                return this._thisPage;
+                return this.thisPage;
             }
             
             set {
-                this._thisPage = value;
+                this.thisPage = value;
             }
         }
         public HomePage(){
@@ -54,11 +62,11 @@ namespace Screens{
             // var tempButtonWidget   = new Widgets.ButtonLogin();
             // var tempEntryLoginWidget = new Widgets.EntryLogin();
 
-            _thisPage = new HomePageUi();
-            _thisPage.append(tempLabelWidget.label);
-            _thisPage.append(tempProgressWidget.cardProg);
-            _thisPage.append(tempCardWidget.changeLyr);
-            _thisPage.append(tempCardWidget.changeLyr2);
+            thisPage = new HomePageUi();
+            thisPage.append(tempLabelWidget.label);
+            thisPage.append(tempProgressWidget.cardProg);
+            thisPage.append(tempCardWidget.changeLyr);
+            thisPage.append(tempCardWidget.changeLyr2);
 
             // thisPage.append(tempEntryLoginWidget.formWrapper);
 

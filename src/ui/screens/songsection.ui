@@ -3,7 +3,7 @@
 <template class="ScreensSongSectionPageUi" parent="GtkBox">
 <property name="orientation">vertical</property>
 <child>
-    <object class="GtkButton">
+    <object class="GtkButton" id="back">
         <property name="label">Back</property>
     </object>
 </child>

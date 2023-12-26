@@ -1,5 +1,5 @@
 public abstract class Page{
-  public abstract Gtk.Box thisPage{ get; set; }
+  public abstract Gtk.Box _thisPage{ get; set; }
 }
 public class Navigator{
     public static Gtk.Box myHome;
@@ -19,7 +19,7 @@ public class Navigator{
       
     }
     public  static void replacement(Page newPage){
-      currentPage = newPage.thisPage;
+      currentPage = newPage._thisPage;
     //  print("tese");
       Gtk.Widget *oldNav=Navigator.myHome.get_last_child();
      // print("tisis\n");

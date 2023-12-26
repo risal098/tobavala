@@ -12,7 +12,7 @@ namespace Widgets{
      public void get_input_val(Gtk.Entry data1, Gtk.Entry data2) {
         string res1 = data1.get_text().to_string();
         string res2 = data2.get_text().to_string();
-
+         Navigator.replacement(new Screens.HomePage());
         print("%s\n, %s\n", res1, res2);
     }
 
