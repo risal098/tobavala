@@ -52,14 +52,38 @@
 }
 
 .myProgress {
-  margin-top: 200px;
-  font-size: 26px;
+  margin-top: 150px;
+  font-size: 48px;
   font-weight: 500;
 }
 
 .progressLabel {
   font-size: 20px;
   font-weight: 500;
+}
+
+.progressCircular {
+  background: #1988E2;
+  /* border: 1px solid blue; */
+  margin-left: 310px;
+  margin-right: 310px;
+  border-radius: 100px;
+  padding: 8px;
+}
+
+.boxPersen {
+  background: white;
+  /* border: 1px solid blue; */
+  padding: 10px;
+  border-radius: 100px;
+
+}
+
+.labelPersen {
+  font-size: 60px;
+  color: #1988E2;
+  font-weight: 600;
+  margin-top: 50px;
 }
 
 
