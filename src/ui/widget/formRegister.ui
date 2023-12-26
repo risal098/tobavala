@@ -5,6 +5,8 @@
 <child>
   <object class="GtkBox" id="formregWrapper">
     <property name="orientation">vertical</property>
+    <property name="halign">center</property>
+
     <property name="spacing">15</property>
     <style>
       <class name="regWrapper"/>
@@ -57,6 +59,13 @@
         <property name="label">Register</property>
       </object>
     </child>
+
+    <child>
+    <object class="GtkButton" id="regisToLoginBtn">
+      <property name="name">regtologbtn</property>
+      <property name="label">Back to Login</property>
+    </object>
+  </child>
 
 
   </object>

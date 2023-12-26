@@ -1,9 +1,11 @@
 .myWrapper {
-  padding: 250px 700px;
+  padding: 25px 70px;
+  margin-top: 100px;
 }
 
 .regWrapper {
-  margin: 250px 700px;
+  padding: 25px 70px;
+  margin-top: 100px;
 }
 
 .labelLogin {
@@ -22,6 +24,28 @@
 
 #logbtn:hover {
   background: #1988E2;
+}
+
+#logtoregbtn {
+  border-radius: 10px;
+  margin: 15px 100px;
+  background: green;
+  font-weight: 600;
+}
+
+#logtoregbtn:hover {
+  background: greenyellow;
+}
+
+#regtologbtn {
+  border-radius: 10px;
+  margin: 15px 100px;
+  background: green;
+  font-weight: 600;
+}
+
+#regtologbtn:hover {
+  background: green;
 }
 
 #regbtn {
@@ -48,11 +72,12 @@
   border: 1px solid blue;
   border-radius: 18px;
   padding: 10px;
-  margin: 30px 500px 20px 500px;
+  /* margin: 30px 500px 20px 500px; */
 }
 
 .myProgress {
-  margin-top: 150px;
+  margin-top: 100px;
+  margin-bottom: 30px;
   font-size: 48px;
   font-weight: 500;
 }
@@ -65,8 +90,8 @@
 .progressCircular {
   background: #1988E2;
   /* border: 1px solid blue; */
-  margin-left: 310px;
-  margin-right: 310px;
+  margin-left: 120px;
+  margin-right: 120px;
   border-radius: 100px;
   padding: 8px;
 }
@@ -80,10 +105,10 @@
 }
 
 .labelPersen {
-  font-size: 60px;
+  font-size: 48px;
   color: #1988E2;
   font-weight: 600;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 
@@ -91,7 +116,8 @@
   border: 1px solid blue;
   border-radius: 18px;
   padding: 20px 30px;
-  margin: 30px 500px 20px 500px;
+  /* margin: 30px 500px 20px 500px; */
+  margin-top: 30px;
   background: linear-gradient(to right, #D9E2F3, #86B2FD);
 
 }
@@ -121,7 +147,8 @@
   border: 1px solid blue;
   border-radius: 18px;
   padding: 20px 0;
-  margin: 30px 500px 20px 500px;
+  /* margin: 30px 500px 20px 500px; */
+  margin-top: 30px;
   background: linear-gradient(to right, #D9E2F3, #86B2FD);
   /* background: #B8D0F6; */
 }
