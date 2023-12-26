@@ -45,7 +45,7 @@
           
           
           fs.clicked.connect(ufullscreen);
-          var tempScreenMain=new Screens.LoginPage();
+          var tempScreenMain=new Screens.SongAnsPage("w","k","o");
           home.append(tempScreenMain.thisPage);
           Navigator.myHome=home;
        //   Navigator.replacement(new Screens.HomePage());

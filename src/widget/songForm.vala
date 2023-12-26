@@ -10,6 +10,7 @@ namespace Widgets{
         string text2 = entry2.get_text().to_string();
         string text3 = entry3.get_text().to_string();
         print("%s\n%s\n%s\n", text1, text2, text3);
+        Navigator.replacement(new Screens.SongGradePage());
        }
  
        public SongForm(){

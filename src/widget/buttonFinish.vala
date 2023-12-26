@@ -9,7 +9,7 @@ namespace Widgets{
           var tempBox=new ButtonFinishUi();
           thisBox = tempBox;
           thisButton = tempBox.fin;
-          thisButton.clicked.connect(clicked);
+          thisButton.clicked.connect(()=>{Navigator.replacement(new Screens.HomePage());});
  
        }
     }

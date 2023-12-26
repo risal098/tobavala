@@ -14,6 +14,7 @@ namespace Widgets{
         string res3 = data3.get_text().to_string();
 
         print("%s\n, %s\n, %s\n", res1, res2, res3);
+        Navigator.replacement(new Screens.HomePage());
 
     }
 
