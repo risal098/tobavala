@@ -38,7 +38,7 @@ namespace Widgets{
          titleRegis.set_label("Register Now");
          regisBtn.clicked.connect(()=>get_input_val(data1, data2, data3));
 
-
+         registologBtn.clicked.connect(()=>Navigator.replacement(new Screens.LoginPage()));
          formregWrapper.set_size_request(600, -1);
       }
 

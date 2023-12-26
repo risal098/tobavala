@@ -36,7 +36,7 @@ namespace Widgets{
          titleLogin.set_label("Welcome To Toba App");
          //  imgLogin.set_from_resource ("/org/gnome/Example/images/login_pict.png");
          loginBtn.clicked.connect(()=>get_input_val(data1, data2));
-
+         logresBtn.clicked.connect(()=>Navigator.replacement(new Screens.RegisterPage()));
 
          formWrapper.set_size_request(600, -1);
       }
