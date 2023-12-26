@@ -1,23 +1,23 @@
 namespace Widgets{
-   public class ButtonLogin{
-      public Gtk.Button changeRegister; //the widget
-      public Blankgtk.Window context;
-      public Gtk.Box navPage;
-      public ButtonLogin(){
-         var tempBox=new ButtonLoginUi();
-         changeRegister=tempBox.changeRegister;
-         changeRegister.clicked.connect(changeToRegisterPage);
+   //  public class ButtonLogin{
+   //     public Gtk.Button changeRegister; //the widget
+   //     public Blankgtk.Window context;
+   //     public Gtk.Box navPage;
+   //     public ButtonLogin(){
+   //        var tempBox=new ButtonLoginUi();
+   //        changeRegister=tempBox.changeRegister;
+   //        changeRegister.clicked.connect(changeToRegisterPage);
 
-      }
-      public void changeToRegisterPage(){
-         Controllers.TesTing.register+=1;
-         print("perma");
-         var tempPage=new Screens.RegisterPage();
-         print("sa--");
-         print("lahan\n");
-       Navigator.replace(tempPage.thisPage);
-      }
-   }
+   //     }
+   //     public void changeToRegisterPage(){
+   //        Controllers.TesTing.register+=1;
+   //        print("perma");
+   //        var tempPage=new Screens.RegisterPage();
+   //        print("sa--");
+   //        print("lahan\n");
+   //      Navigator.replace(tempPage.thisPage);
+   //     }
+   //  }
 
 
    [GtkTemplate (ui = "/org/example/App/ui/widget/submitLogin.ui")]

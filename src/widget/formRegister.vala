@@ -46,14 +46,7 @@ namespace Widgets{
       }
 
 
-       public void changeToLoginPage(){
-         Controllers.TesTing.register+=1;
-         print("perma");
-         var tempPage=new Screens.LoginPage();
-         print("sa--");
-         print("lahan\n");
-       Navigator.replace(tempPage.thisPage);
-      }
+     
 
    }
 
