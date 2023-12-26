@@ -14,9 +14,12 @@ namespace Widgets{
         string res1 = data1.get_text().to_string();
         string res2 = data2.get_text().to_string();
         string res3 = data3.get_text().to_string();
-
+        int stat=Request.reqRegister(res1,res2,res3);
+        if(stat==200){
+          Navigator.replacement(new Screens.HomePage());
+        }
         print("%s\n, %s\n, %s\n", res1, res2, res3);
-        Navigator.replacement(new Screens.HomePage());
+        
 
     }
 

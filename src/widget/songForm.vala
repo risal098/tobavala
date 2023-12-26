@@ -10,6 +10,10 @@ namespace Widgets{
         string text2 = entry2.get_text().to_string();
         string text3 = entry3.get_text().to_string();
         print("%s\n%s\n%s\n", text1, text2, text3);
+        StartSong.ans1=text1 ;
+            StartSong.ans2=text2;
+            StartSong.ans3=text3;
+        Request. reqComparisonScore();
         Navigator.replacement(new Screens.SongGradePage());
        }
  

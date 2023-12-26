@@ -15,7 +15,9 @@ namespace Screens{
                 this.thisPages = value;
             }
         }
-        public SongAnsPage(string imagePath, string songTitle, string singer){
+        public SongAnsPage(string imagePath, string songTitle, string singer,string getTitle){
+            Request.getLyric(getTitle,SongSection.difficulty);
+            print("bukti : %s\n", StartSong.lyric1);
             this.imagePath = imagePath;
             this.songTitle = songTitle;
             this.singer = singer;

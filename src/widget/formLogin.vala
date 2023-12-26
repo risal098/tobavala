@@ -14,7 +14,9 @@ namespace Widgets{
      public void get_input_val(Gtk.Entry data1, Gtk.Entry data2) {
         string res1 = data1.get_text().to_string();
         string res2 = data2.get_text().to_string();
-         Navigator.replacement(new Screens.HomePage());
+        int stat=Request.reqLogin(res1,res2);
+        if(stat==200){Navigator.replacement(new Screens.HomePage());}
+         
         print("%s\n, %s\n", res1, res2);
     }
 
@@ -42,14 +44,14 @@ namespace Widgets{
       }
 
 
-      public void changeToHomePage(){
-         Controllers.TesTing.register+=1;
-         print("perma");
-         var tempPage=new Screens.HomePage();
-         print("sa--");
-         print("lahan\n");
-       Navigator.replace(tempPage.thisPage);
-      }
+      //  public void changeToHomePage(){
+      //     Controllers.TesTing.register+=1;
+      //     print("perma");
+      //     var tempPage=new Screens.HomePage();
+      //     print("sa--");
+      //     print("lahan\n");
+      //   Navigator.replace(tempPage.thisPage);
+      //  }
    }
 
    [GtkTemplate (ui = "/org/example/App/ui/widget/formLogin.ui")]

@@ -36,7 +36,7 @@ namespace Widgets{
           thisImage.set_from_resource(path);
           thisLabel.set_label(songLabel);
 
-          playBtn.clicked.connect(()=>{Navigator.replacement(new Screens.SongAnsPage(path,songLabel,singer));});
+          playBtn.clicked.connect(()=>{Navigator.replacement(new Screens.SongAnsPage(path,songLabel,singer,getTitle));});
        }
     }
  

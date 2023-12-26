@@ -11,7 +11,7 @@ namespace Screens{
             }
         }
         public HomePage(){
-
+           Request.reqGetPlayedSong();
             var tempLabelWidget = new Widgets.LabelHome();
             var tempProgressWidget = new Widgets.ProgressHome();
             var tempCardWidget = new Widgets.CardHome();

@@ -109,6 +109,7 @@ public static  void parseGetBasicList(string response){
                 SongSection. songGetTitle.append(tempList.get_string_element(4));
          }
          print("parseGetBasicList \n%s\n\n",response);
+         print("contoh: %s\n\n", SongSection. songSinger .nth_data(0));
         //   SongSection. songTitle=tempSongTitles.copy ();
         //   SongSection. songSinger=tempsongSinger.copy ();
         //   SongSection. songGetTitle= tempGetTitle.copy ();

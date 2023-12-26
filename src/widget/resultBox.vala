@@ -16,9 +16,28 @@ namespace Widgets{
           label1.set_label(text1);
           label2.set_label(text2);
           label3.set_label(text3);
+          if(text1==StartSong.ans1){
+          addColor(label1,SongGrade.score1);
+          addColor(label2,SongGrade.score2);
+          addColor(label3,SongGrade.score3);
+          }
           type.set_label(typeBox);
 
           
+       }
+       
+       public string color(double point){
+         if(point>0.7){
+            return "greenText";
+         }else if(point<=0.7 && point >0.3){
+            return "yellowText";
+         }else{
+            return "redText";
+         }
+       }
+       public void addColor(Gtk.Label label,double point){
+
+         label.add_css_class(color(point));
        }
     }
  

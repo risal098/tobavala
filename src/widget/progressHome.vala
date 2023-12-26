@@ -23,9 +23,9 @@ namespace Widgets{
       circularProg.set_size_request(-1,150);
       persenProg.set_size_request(-1, 150);
 
-      labelPers.set_label("15%");
+      labelPers.set_label(AccountData.playedSong.to_string());
       //  labelPers.set_justify(2);
-      labelProg.set_label(@"You have achieved $(persenStat)% of your weekly goal");
+      labelProg.set_label(@"You have played $(AccountData.playedSong.to_string()) Audio ");
     }
   }
    [GtkTemplate (ui = "/org/example/App/ui/widget/progressHome.ui")]

@@ -32,9 +32,14 @@ namespace Screens{
             //  mainBox.set_size_request(900,800);
             //  var tempCard=new Widgets.UserBox();
             //  secondary.append(tempCard.thisbox);
-            for(int i = 0; i<20; i++){
+            Request.getBasicSongList();
+            print("panjang lagu= %d\n",(int)SongSection. songTitle.length());
+            for(int i = 0; i<(int)SongSection. songTitle.length(); i++){
                 string a = "A Thousand Years"+i.to_string();
-                secondary.append(new Widgets.SongCard("/org/example/App/assets/AThousand_Years.png", a, "Christina Perri","AThousandYears").thisbox);
+                string title=(string)SongSection. songTitle.nth_data(i);
+                string singer=(string)SongSection. songSinger.nth_data(i);
+                string getTitle=(string)SongSection. songGetTitle.nth_data(i);
+                secondary.append(new Widgets.SongCard("/org/example/App/assets/AThousand_Years.png", title, singer,getTitle).thisbox);
             }
             
         }
