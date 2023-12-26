@@ -1,12 +1,20 @@
 namespace Screens{
-    public class SongAnsPage{
+    public class SongAnsPage:Page{
         public Gtk.Box thisPages;
         public SongAnsPageUi thisPage;
         public Gtk.CssProvider css_style;
         public string imagePath;
         public string songTitle;
         public string singer;
-        
+        public override Gtk.Box _thisPage{
+            get {
+                return this.thisPages;
+            }
+            
+            set {
+                this.thisPages = value;
+            }
+        }
         public SongAnsPage(string imagePath, string songTitle, string singer){
             this.imagePath = imagePath;
             this.songTitle = songTitle;

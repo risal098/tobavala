@@ -1,6 +1,15 @@
 namespace Screens{
-    public class LoginPage{
+    public class LoginPage:Page{
         public Gtk.Box thisPage;
+        public override Gtk.Box _thisPage{
+            get {
+                return this.thisPage;
+            }
+            
+            set {
+                this.thisPage = value;
+            }
+        }
         public LoginPage(){
             
             var tempLabelWidget= new Widgets.LabelLogin();

@@ -1,12 +1,20 @@
 namespace Screens{
-    public class SongGradePage{
+    public class SongGradePage:Page{
         public Gtk.Box thisPages;
         public Gtk.Box resultBoxes;
         public SongGradePageUi thisPage;
         public Gtk.CssProvider css_style;
         public Gtk.Box buatGrade;
         public Gtk.Box center;
-        
+        public override Gtk.Box _thisPage{
+            get {
+                return this.thisPages;
+            }
+            
+            set {
+                this.thisPages = value;
+            }
+        }
         public SongGradePage(){
             css_style = new Gtk.CssProvider();
             css_style.load_from_resource("/org/example/App/assets/songGrade.css");

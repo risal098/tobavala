@@ -1,8 +1,16 @@
 namespace Screens{
-    public class RegisterPage{
+    public class RegisterPage:Page{
         public Gtk.Box thisPage;
         public string tet="ted";
-
+        public override Gtk.Box _thisPage{
+            get {
+                return this.thisPage;
+            }
+            
+            set {
+                this.thisPage = value;
+            }
+        }
         public RegisterPage(){
 
             var tempLabelWidget=new Widgets.LabelRegister();
