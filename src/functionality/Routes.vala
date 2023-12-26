@@ -8,11 +8,8 @@ public class Navigator{
   
     public  static void replacement(Page newPage){
       currentPage = newPage._thisPage;
-    //  print("tese");
       Gtk.Widget *oldNav=Navigator.myHome.get_last_child();
-     // print("tisis\n");
       Navigator.myHome.append(currentPage);
-    //  print("pipis");
       Navigator.myHome.remove(oldNav);
 
        

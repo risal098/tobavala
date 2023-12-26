@@ -42,18 +42,11 @@
        construct{
           print("1");
           full.set_from_icon_name("view-fullscreen");
-          
-          
           fs.clicked.connect(ufullscreen);
           var tempScreenMain=new Screens.RegisterPage();
           home.append(tempScreenMain.thisPage);
           Navigator.myHome=home;
-       //   Navigator.replacement(new Screens.HomePage());
-         //   wow=new Gtk.Box(Gtk.Orientation.VERTICAL,5);
-         //   this.set_child(wow);
-         //   wow.append(tempScreenMain.thisPage);
-         //   Navigator.myHome=wow;
-         //   print("aku\n");
+
 
        }
        public void ufullscreen() {
@@ -70,3 +63,9 @@
        
    }
 }
+       //   Navigator.replacement(new Screens.HomePage());
+         //   wow=new Gtk.Box(Gtk.Orientation.VERTICAL,5);
+         //   this.set_child(wow);
+         //   wow.append(tempScreenMain.thisPage);
+         //   Navigator.myHome=wow;
+         //   print("aku\n");

@@ -7,51 +7,38 @@ namespace Widgets{
       public Gtk.Label titleLogin;
       //  public Gtk.Image imgLogin;
       public Gtk.Button logresBtn;
-
-
       public bool isClicked = false;
-
      public void get_input_val(Gtk.Entry data1, Gtk.Entry data2) {
         string res1 = data1.get_text().to_string();
         string res2 = data2.get_text().to_string();
         int stat=Request.reqLogin(res1,res2);
         if(stat==200){Navigator.replacement(new Screens.HomePage());}
-         
-        print("%s\n, %s\n", res1, res2);
+        print("usus : %s\n,pw : %s\n", this.username.get_text().to_string(), this.password.get_text());
     }
-
+    public void get_input_val2() {
+      print("awodawo\n");
+      string res1 = this.username.get_text().to_string();
+      string res2 = this.password.get_text().to_string();
+      print("usus2 : %s\n,pw2 : %s\n", res1, res2);
+      int stat=Request.reqLogin(res1,res2);
+      if(stat==200){Navigator.replacement(new Screens.HomePage());}   
+  }
       public FormLogin(){
          var tempBox = new FormLoginUi();
          formWrapper = tempBox.formWrapper;
          var data1 = tempBox.usernameLogin;
          var data2 = tempBox.passwordLogin;
-
          loginBtn = tempBox.loginBtn;
-         username = tempBox.usernameLogin;
-         password = tempBox.passwordLogin;
+         this. username = data1;
+         this.password = data2;
          titleLogin = tempBox.loginLabel;
          logresBtn = tempBox.loginToRegisBtn;
-
-         //  imgLogin = tempBox.loginImg;
-
-
          titleLogin.set_label("Welcome To Toba App");
-         //  imgLogin.set_from_resource ("/org/gnome/Example/images/login_pict.png");
-         loginBtn.clicked.connect(()=>get_input_val(data1, data2));
+         loginBtn.clicked.connect(()=>get_input_val(data1,  data2));
          logresBtn.clicked.connect(()=>Navigator.replacement(new Screens.RegisterPage()));
-
          formWrapper.set_size_request(600, -1);
       }
 
-
-      //  public void changeToHomePage(){
-      //     Controllers.TesTing.register+=1;
-      //     print("perma");
-      //     var tempPage=new Screens.HomePage();
-      //     print("sa--");
-      //     print("lahan\n");
-      //   Navigator.replace(tempPage.thisPage);
-      //  }
    }
 
    [GtkTemplate (ui = "/org/example/App/ui/widget/formLogin.ui")]

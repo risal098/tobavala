@@ -74,15 +74,7 @@ public class Request{
             StartSong.ans2,
             StartSong.ans3
         );
-        //  print("\nsebelum :%s :--------<\n",StartSong.ans1);
-        //  string body=Jsonizer.genAskComparison(
-        //      "tenent",
-        //      "tenent",
-        //      "tenent",
-        //      "tenent",
-        //      "tenent",
-        //      "tenent"
-        //  );
+    
         msg.set_request ("application/json",Soup.MemoryUse.COPY, body.data);
         print("seandainya-------> %s\n\n",body);
         session.send_message (msg);

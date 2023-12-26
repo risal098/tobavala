@@ -12,14 +12,9 @@ namespace Screens{
             }
         }
         public RegisterPage(){
-
             var tempLabelWidget=new Widgets.LabelRegister();
             var tempFormRegisterWidget = new Widgets.FormRegister();
-
-
             thisPage=new RegisterPageUi ();
-
-            //  thisPage.append(tempLabelWidget.label);
             thisPage.append(tempFormRegisterWidget.formregWrapper);
 
         }

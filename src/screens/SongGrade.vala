@@ -33,13 +33,6 @@ namespace Screens{
             resultBoxes.append(new Widgets.ResultBox("Your Answer",StartSong.ans1,StartSong.ans2, StartSong.ans3).thisBox);
             resultBoxes.append(new Widgets.ResultBox("Right Answer",StartSong.lyric1,StartSong.lyric2, StartSong.lyric3).thisBox);
             center.append(new Widgets.ButtonFinish().thisBox);
-
-            
-            
-            //  var widget = new Widgets.SongForm();
-            //  thisPage.append(widget.formregWrapper);
-            
-            
         }
 
     }

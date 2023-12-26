@@ -15,19 +15,10 @@ namespace Screens{
             var tempLabelWidget = new Widgets.LabelHome();
             var tempProgressWidget = new Widgets.ProgressHome();
             var tempCardWidget = new Widgets.CardHome();
-            // var tempButtonWidget   = new Widgets.ButtonLogin();
-            // var tempEntryLoginWidget = new Widgets.EntryLogin();
-
             thisPage = new HomePageUi();
             thisPage.append(tempLabelWidget.label);
             thisPage.append(tempProgressWidget.cardProg);
             thisPage.append(tempCardWidget.cardWrap);
-            //  thisPage.append(tempCardWidget.changeLyr2);
-
-            // thisPage.append(tempEntryLoginWidget.formWrapper);
-
-            // thisPage.append(tempButtonWidget .changeRegister);
-
         }
     }
 

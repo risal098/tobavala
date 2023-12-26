@@ -29,9 +29,6 @@ namespace Screens{
             secondary = thisPage.secondaryBox;
             this.back=thisPage.back;
             this.back.clicked.connect(()=>{ Navigator.replacement(new Screens.HomePage());});
-            //  mainBox.set_size_request(900,800);
-            //  var tempCard=new Widgets.UserBox();
-            //  secondary.append(tempCard.thisbox);
             Request.getBasicSongList();
             print("panjang lagu= %d\n",(int)SongSection. songTitle.length());
             for(int i = 0; i<(int)SongSection. songTitle.length(); i++){

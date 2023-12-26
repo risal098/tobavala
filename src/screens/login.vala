@@ -11,15 +11,10 @@ namespace Screens{
             }
         }
         public LoginPage(){
-            
             var tempLabelWidget= new Widgets.LabelLogin();
             var tempFormLoginWidget = new Widgets.FormLogin();
-
-
             thisPage=new LoginPageUi();
-            //  thisPage.append(tempLabelWidget.label);
             thisPage.append(tempFormLoginWidget.formWrapper);
-            //  thisPage.append(tempButtonWidget .changeRegister);
         }
         
     }

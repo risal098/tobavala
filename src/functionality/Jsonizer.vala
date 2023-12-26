@@ -110,9 +110,7 @@ public static  void parseGetBasicList(string response){
          }
          print("parseGetBasicList \n%s\n\n",response);
          print("contoh: %s\n\n", SongSection. songSinger .nth_data(0));
-        //   SongSection. songTitle=tempSongTitles.copy ();
-        //   SongSection. songSinger=tempsongSinger.copy ();
-        //   SongSection. songGetTitle= tempGetTitle.copy ();
+
 }
 public static  void parseGetTop20(string response){
         var parser = new Json.Parser();
@@ -128,8 +126,7 @@ public static  void parseGetTop20(string response){
                 Leaderboard.points.append((int)tempList.get_int_element(2));
          }
          print("parseGetTop20 \n%s\n\n",response);
-        // Leaderboard.username=tempUsername.copy ();
-       //  Leaderboard.points=tempPoints.copy ();
+
 }
 public static void parseComparisonScore(string response){
         var parser = new Json.Parser();
